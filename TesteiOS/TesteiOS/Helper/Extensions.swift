@@ -8,12 +8,6 @@
 
 import UIKit
 
-extension UITextField {
-    func borderStyle(type: UITextField.BorderStyle) {
-        self.borderStyle = type
-    }
-}
-
 extension UIButton {
     func cornerRadius(to: CGFloat) {
         self.layer.cornerRadius = to

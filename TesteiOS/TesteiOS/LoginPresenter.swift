@@ -21,6 +21,7 @@ protocol LoginPresenterProtocol: class {
     var interactor: LoginInteractorInputProtocol? { get set }
     
     func viewWillAppear()
+    func requestLogin()
 }
 
 class LoginPresenter: LoginPresenterProtocol {
@@ -39,8 +40,13 @@ class LoginPresenter: LoginPresenterProtocol {
         guard let view = view else { return }
         view.doViewWillAppear()
     }
+    
+    func requestLogin() {
+        
+    }
 }
 
+//MARK: LoginInteractorOutputProtocol
 extension LoginPresenter: LoginInteractorOutputProtocol{
     
 }

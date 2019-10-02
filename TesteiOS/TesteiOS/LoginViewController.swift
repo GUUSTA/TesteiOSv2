@@ -28,14 +28,13 @@ class LoginViewController: UIViewController {
 
 // MARK: IBActions
     @IBAction func loginAction(_ sender: UIButton) {
-        
+        guard let presenter = presenter else { return }
+        presenter.requestLogin()
     }
 } // MARK: End LoginViewController
 
 extension LoginViewController: LoginViewProtocol {
     func doViewWillAppear() {
-//        txtUser.borderStyle(type: .roundedRect)
-//        txtPassword.borderStyle(type: .roundedRect)
         btnLogin.cornerRadius(to: 5)
     }
 }
