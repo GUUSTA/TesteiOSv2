@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="btnLogin" destination="zgR-tK-Wt5" id="vUt-ws-Gz4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="q6M-6j-jly">
+                    <rect key="frame" x="130.5" y="56" width="114" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="q6M-6j-jly" secondAttribute="height" multiplier="25:14" id="PnM-hM-iOh"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="paz-Ya-Ss1">
+                    <rect key="frame" x="16" y="225" width="343" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="paz-Ya-Ss1" secondAttribute="height" multiplier="343:50" id="afL-7y-Jhk"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="continue" textContentType="username"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fTa-Up-WrE">
+                    <rect key="frame" x="16" y="296" width="343" height="50"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="continue" textContentType="username"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgR-tK-Wt5">
+                    <rect key="frame" x="90" y="579" width="195" height="55"/>
+                    <color key="backgroundColor" red="0.23137254901960785" green="0.28235294117647058" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zgR-tK-Wt5" secondAttribute="height" multiplier="39:11" id="r5A-R0-p8H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Fc1-UV-P4j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9wU-fm-lGl" firstAttribute="trailing" secondItem="fTa-Up-WrE" secondAttribute="trailing" constant="16" id="0tq-FQ-SeU"/>
+                <constraint firstItem="paz-Ya-Ss1" firstAttribute="leading" secondItem="9wU-fm-lGl" secondAttribute="leading" constant="16" id="22y-8r-S4Q"/>
+                <constraint firstItem="q6M-6j-jly" firstAttribute="top" secondItem="9wU-fm-lGl" secondAttribute="top" constant="56" id="3TO-dg-HOM"/>
+                <constraint firstItem="fTa-Up-WrE" firstAttribute="width" secondItem="fTa-Up-WrE" secondAttribute="height" multiplier="343:50" id="4fB-Vp-0rD"/>
+                <constraint firstItem="zgR-tK-Wt5" firstAttribute="leading" secondItem="9wU-fm-lGl" secondAttribute="leading" constant="90" id="DWc-KG-UMP"/>
+                <constraint firstItem="9wU-fm-lGl" firstAttribute="trailing" secondItem="zgR-tK-Wt5" secondAttribute="trailing" constant="90" id="Exq-eV-44P"/>
+                <constraint firstItem="9wU-fm-lGl" firstAttribute="bottom" secondItem="zgR-tK-Wt5" secondAttribute="bottom" constant="33" id="YN5-g7-aAg"/>
+                <constraint firstItem="fTa-Up-WrE" firstAttribute="leading" secondItem="9wU-fm-lGl" secondAttribute="leading" constant="16" id="d7p-fE-7yR"/>
+                <constraint firstItem="9wU-fm-lGl" firstAttribute="trailing" secondItem="paz-Ya-Ss1" secondAttribute="trailing" constant="16" id="fF6-Ga-HT3"/>
+                <constraint firstItem="paz-Ya-Ss1" firstAttribute="top" secondItem="q6M-6j-jly" secondAttribute="bottom" constant="105" id="k3Y-nf-hFe"/>
+                <constraint firstItem="q6M-6j-jly" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ka1-0O-Ias"/>
+                <constraint firstItem="fTa-Up-WrE" firstAttribute="top" secondItem="paz-Ya-Ss1" secondAttribute="bottom" constant="21" id="odT-E7-24I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9wU-fm-lGl"/>
+            <point key="canvasLocation" x="136.80000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="112" height="64"/>
+    </resources>
+</document>
