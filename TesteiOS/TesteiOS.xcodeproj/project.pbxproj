@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		267353CD702A45C5E2B3F310 /* Pods_TesteiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C39CDD86A7E2F1B033CE35 /* Pods_TesteiOSUITests.framework */; };
 		E73682FFEB8F0D9B4B62E072 /* Pods_TesteiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434584E4A5C2E58FBB9EF067 /* Pods_TesteiOS.framework */; };
+		EC27B30923452B9D002B5F01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B30823452B9D002B5F01 /* User.swift */; };
+		EC27B30A23452B9D002B5F01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B30823452B9D002B5F01 /* User.swift */; };
+		EC27B30B23452B9D002B5F01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B30823452B9D002B5F01 /* User.swift */; };
+		EC27B30D23452BB1002B5F01 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B30C23452BB1002B5F01 /* Statement.swift */; };
+		EC27B30E23452BB1002B5F01 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B30C23452BB1002B5F01 /* Statement.swift */; };
+		EC27B30F23452BB1002B5F01 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B30C23452BB1002B5F01 /* Statement.swift */; };
+		EC27B31123452BC0002B5F01 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B31023452BC0002B5F01 /* API.swift */; };
+		EC27B31223452BC0002B5F01 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B31023452BC0002B5F01 /* API.swift */; };
+		EC27B31323452BC0002B5F01 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27B31023452BC0002B5F01 /* API.swift */; };
 		EC59EF132345275F008DF5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC59EF122345275F008DF5F6 /* LaunchScreen.storyboard */; };
 		ECBE88BF2343F4AA00658D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE88BE2343F4AA00658D5A /* AppDelegate.swift */; };
 		ECBE88C12343F4AA00658D5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE88C02343F4AA00658D5A /* SceneDelegate.swift */; };
@@ -76,6 +85,9 @@
 		A56BE850AD54BA51AF1766AD /* Pods-TesteiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOS/Pods-TesteiOS.release.xcconfig"; sourceTree = "<group>"; };
 		A6C39CDD86A7E2F1B033CE35 /* Pods_TesteiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85AAC7ABE2861683A05C306 /* Pods_TesteiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC27B30823452B9D002B5F01 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC27B30C23452BB1002B5F01 /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		EC27B31023452BC0002B5F01 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EC59EF122345275F008DF5F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECBE88BB2343F4AA00658D5A /* TesteiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBE88BE2343F4AA00658D5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +231,9 @@
 		ECBE88F02343F81600658D5A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EC27B30823452B9D002B5F01 /* User.swift */,
+				EC27B30C23452BB1002B5F01 /* Statement.swift */,
+				EC27B31023452BC0002B5F01 /* API.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -546,10 +561,13 @@
 				ECBE88FD2343F8D800658D5A /* CurrencyRouter.swift in Sources */,
 				ECBE89002343F8D800658D5A /* CurrencyViewController.swift in Sources */,
 				ECBE89122343F8E600658D5A /* LoginPresenter.swift in Sources */,
+				EC27B30D23452BB1002B5F01 /* Statement.swift in Sources */,
 				ECBE88FA2343F8D800658D5A /* CurrencyPresenter.swift in Sources */,
+				EC27B31123452BC0002B5F01 /* API.swift in Sources */,
 				ECBE88BF2343F4AA00658D5A /* AppDelegate.swift in Sources */,
 				ECBE891B2343F8E600658D5A /* LoginInteractor.swift in Sources */,
 				ECBE89152343F8E600658D5A /* LoginRouter.swift in Sources */,
+				EC27B30923452B9D002B5F01 /* User.swift in Sources */,
 				ECBE88C12343F4AA00658D5A /* SceneDelegate.swift in Sources */,
 				ECBE89182343F8E600658D5A /* LoginViewController.swift in Sources */,
 				ECBE8925234416F200658D5A /* Extensions.swift in Sources */,
@@ -563,13 +581,16 @@
 				ECBE89192343F8E600658D5A /* LoginViewController.swift in Sources */,
 				ECBE88FE2343F8D800658D5A /* CurrencyRouter.swift in Sources */,
 				ECBE89132343F8E600658D5A /* LoginPresenter.swift in Sources */,
+				EC27B30E23452BB1002B5F01 /* Statement.swift in Sources */,
 				ECBE89012343F8D800658D5A /* CurrencyViewController.swift in Sources */,
 				ECBE88D62343F4AB00658D5A /* TesteiOSTests.swift in Sources */,
 				ECBE89042343F8D800658D5A /* CurrencyInteractor.swift in Sources */,
 				ECBE8926234416F200658D5A /* Extensions.swift in Sources */,
+				EC27B31223452BC0002B5F01 /* API.swift in Sources */,
 				ECBE89162343F8E600658D5A /* LoginRouter.swift in Sources */,
 				ECBE891C2343F8E600658D5A /* LoginInteractor.swift in Sources */,
 				ECBE88FB2343F8D800658D5A /* CurrencyPresenter.swift in Sources */,
+				EC27B30A23452B9D002B5F01 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,13 +601,16 @@
 				ECBE891A2343F8E600658D5A /* LoginViewController.swift in Sources */,
 				ECBE88FF2343F8D800658D5A /* CurrencyRouter.swift in Sources */,
 				ECBE89142343F8E600658D5A /* LoginPresenter.swift in Sources */,
+				EC27B30F23452BB1002B5F01 /* Statement.swift in Sources */,
 				ECBE89022343F8D800658D5A /* CurrencyViewController.swift in Sources */,
 				ECBE88E12343F4AB00658D5A /* TesteiOSUITests.swift in Sources */,
 				ECBE89052343F8D800658D5A /* CurrencyInteractor.swift in Sources */,
 				ECBE8927234416F200658D5A /* Extensions.swift in Sources */,
+				EC27B31323452BC0002B5F01 /* API.swift in Sources */,
 				ECBE89172343F8E600658D5A /* LoginRouter.swift in Sources */,
 				ECBE891D2343F8E600658D5A /* LoginInteractor.swift in Sources */,
 				ECBE88FC2343F8D800658D5A /* CurrencyPresenter.swift in Sources */,
+				EC27B30B23452B9D002B5F01 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,12 +750,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4Q8B5NHUM;
 				INFOPLIST_FILE = TesteiOS/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.garcia.leite.TesteiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -745,12 +771,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4Q8B5NHUM;
 				INFOPLIST_FILE = TesteiOS/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavo.garcia.leite.TesteiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
