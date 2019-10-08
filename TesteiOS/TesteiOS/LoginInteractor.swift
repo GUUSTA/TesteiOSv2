@@ -10,7 +10,7 @@ import UIKit
 protocol LoginInteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
-    func showData(data: User)
+    func pushCurrency(data: User)
 }
 
 protocol LoginInteractorInputProtocol: class {
@@ -18,21 +18,23 @@ protocol LoginInteractorInputProtocol: class {
     var presenter: LoginInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
-    func requestDataToAPI(user: String, password: String)
+    func requestUser(user: String, password: String)
 }
 
 class LoginInteractor: LoginInteractorInputProtocol {
 
     weak var presenter: LoginInteractorOutputProtocol?
     
-    func requestDataToAPI(user: String, password: String) {
+    func requestUser(user: String, password: String) {
         API.loginURL.post(user: user, password: password, success: { data in
             do {
                 guard let presenter = self.presenter else { return }
                 let root = try JSONDecoder().decode(UserRoot.self, from: data)
-                print()
                 let user = root.userAccount
-                presenter.showData(data: user)
+                print(user)
+                print()
+                print()
+                presenter.pushCurrency(data: user)
             } catch let error as NSError{
                 print(error)
             }

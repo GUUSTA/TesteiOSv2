@@ -8,14 +8,14 @@ import UIKit
 
 //MARK: Router -
 protocol CurrencyRouterProtocol: class {
-
+    func dismiss()
 }
 
 class CurrencyRouter: CurrencyRouterProtocol {
 
     weak var viewController: UIViewController?
 
-    static func createModule() -> UIViewController {
+    static func createModule(user: User) -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = CurrencyViewController(nibName: nil, bundle: nil)
         let interactor = CurrencyInteractor()
@@ -27,5 +27,10 @@ class CurrencyRouter: CurrencyRouterProtocol {
         router.viewController = view
 
         return view
+    }
+    
+    func dismiss() {
+        guard let currencyController = viewController else { return }
+        currencyController.dismiss(animated: true, completion: nil)
     }
 }

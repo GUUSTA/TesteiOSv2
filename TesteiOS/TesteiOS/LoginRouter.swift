@@ -8,6 +8,7 @@ import UIKit
 
 //MARK: Router -
 protocol LoginRouterProtocol: class {
+    func pushToStatements(user: User)
 
 }
 
@@ -27,5 +28,15 @@ class LoginRouter: LoginRouterProtocol {
         router.viewController = view
 
         return view
+    }
+    
+    func pushToStatements(user: User) {
+        guard let loginView = viewController, let navigation = loginView.navigationController else { return }
+        let currencyView = CurrencyRouter.createModule(user: user) as! CurrencyViewController
+        currencyView.modalPresentationStyle = .fullScreen
+        guard let currencyPresenter = currencyView.presenter else { return }
+        
+        currencyPresenter.sendUser(user: user)
+        navigation.present(currencyView, animated: true)
     }
 }

@@ -18,9 +18,8 @@ enum API: String {
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch response.result {
             case .success:
-                if let data = response.data {
-                    success(data)
-                }
+                guard let data = response.data else { return }
+                success(data)
             case .failure(let error):
                 failure(error)
             }
@@ -33,13 +32,11 @@ enum API: String {
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
             switch response.result {
             case .success:
-                if let data = response.data {
-                    success(data)
-                }
+                guard let data = response.data else { return }
+                success(data)
             case .failure(let error):
                 failure(error)
             }
         }
     }
-    
 }
